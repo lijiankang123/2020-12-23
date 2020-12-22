@@ -1,0 +1,66 @@
+<!-- 顶部区域开始 -->
+<view class="movie-detail">
+  <view class="movie-filter"></view>
+  <!-- 背景图开始 -->
+  <view class="poster-background"  style="background-image:url('https://p1.meituan.net/71.100/moviemachine/6fb1855f663f9856bfc47b7d013e0474651230.jpg')">
+  </view>
+  <!-- 背景图结束 -->
+  <view class="detail">
+      <!--海报帧开始-->
+      <view class="poster">
+        <image src="/images/6fb1855f663f9856bfc47b7d013e0474651230.jpg"></image>
+      </view>
+      <!--海报帧结束-->
+      <!-- 内容区域开始 -->
+      <view class="content">
+          <view class="title line-ellipsis">{{info</view>
+          <view class="score line-ellipsis">{{info</view>
+          <view class="type line-ellipsis">主演: </view>
+          <view class="type line-ellipsis">{{info</view>
+          <view class="type line-ellipsis">{{info上映</view>
+      </view>
+      <!-- 内容区域结束 -->
+  </view>
+</view>
+<!-- 顶部区域结束 -->
+<!-- 简介区域开始 -->
+<view class="introduction" bindtap="toggleDescription">
+  <view>
+    <text decode="true">{{info.</text>
+  </view>
+  <view class="more">
+    <image src="/images/303c2e671cc4df875c151d688ecbd8962085989@1l_1e_1c_128w_180h.jpg"></image>
+  </view>
+</view>
+<!-- 简介区域结束 -->
+<!-- 演职人员开始 -->
+<view class="actors">
+  <view class="title">演职人员</view>
+  <scroll-view scroll-x="true" class="actors-list">
+    <view class="actors-item" >
+      <image src="/images/8e94cab5781a1b748f1e5df936fb93f259685@420w_279h_1e_1c.jpg"></image>
+      <text>{{item</text>
+    </view>   
+    <view class="actors-item">
+      <image src="/images/arrow_down1.png"></image>
+      <text>{{item</text>
+    </view>   
+  </scroll-view>
+</view>
+<!-- 演职人员结束 -->
+<!-- 剧照开始 -->
+<view class="photos">
+  <view class="title">视频和剧照</view>
+  <scroll-view scroll-x="true" class="photos-list">
+     <view class="photos-item">
+        <image src="/images/28ff191ca08fe6bf689bf07cb4aaa48584424@420w_279h_1e_1c.jpg"></image>
+     </view>
+     <view class="photos-item">
+       <image src="/images/8e94cab5781a1b748f1e5df936fb93f259685@420w_279h_1e_1c.jpg"></image>
+     </view>
+     <view class="photos-item">
+        <image src="/images/4978405667fb814106da76da72fec568128212@420w_279h_1e_1c.jpg"></image>
+     </view>
+  </scroll-view>
+</view>
+<!-- 剧照结束 -->
