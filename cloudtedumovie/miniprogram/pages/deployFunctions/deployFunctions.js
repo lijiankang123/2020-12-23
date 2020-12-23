@@ -1,47 +1,20 @@
-// pages/movie/movie.js
+// pages/deployFunctions/deployFunctions.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     info:{},
-     isOpen:false
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     let id = options.id
-     wx.request({
-       url: 'https://api.tedu.cn/detail.php' ,
-       method:'GET',
-       data:{
-         id:id
-       },
-       success:res=>{
-         this.setData({
-          info:res.data
-         })
-       }
-     })
+
   },
 
-
-  toggleDescription(){
-    let isOpen = this.data.isOpen;
-    this.setData({
-      isOpen:!isOpen
-    })
-  },
-  //   预览图片
-  previewImage(event){
-    wx.previewImage({
-      urls: this.data.info.thumb,
-      current:event.target.dataset.path
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

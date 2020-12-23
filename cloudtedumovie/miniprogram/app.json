@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/theatre/theatre",
+    "pages/me/me",
+    "pages/movie/movie",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#e54847",
+    "navigationBarTitleText": "达内电影",
+    "navigationBarTextStyle":"white",
+    "onReachBottomDistance": 30,
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#696969",
+    "selectedColor": "#f03d37",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "电影",
+      "iconPath": "images/index_disable.png",
+      "selectedIconPath": "images/index_enable.png"
+    },{
+      "pagePath": "pages/theatre/theatre",
+      "text": "影院",
+      "iconPath": "images/theatre_disable.png",
+      "selectedIconPath": "images/theatre_enable.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/me_disable.png",
+      "selectedIconPath": "images/me_enable.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

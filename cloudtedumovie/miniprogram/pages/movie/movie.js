@@ -25,6 +25,13 @@ Page({
           info:res.data
          })
        }
+     });
+     let db = wx.cloud.database();
+     let coll = db.collection('comments');
+     coll.get({
+      success:res=>{
+        console.log(res.data)
+      }
      })
   },
 
